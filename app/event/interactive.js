@@ -21,7 +21,7 @@ module.exports = (event, state, map, send) => {
         }
 
         axios.post(api_url, {
-            id_number: id,
+            user_id: id,
             query: msg.text
         }, axiosConfig)
             .then((res) => {

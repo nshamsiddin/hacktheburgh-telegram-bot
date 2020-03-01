@@ -46,7 +46,12 @@ module.exports = async (event, state, map, send) => {
 
         const api_url = config.api.url
         const { firstname, surname, postcode, phoneno, id } = user
-
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                "Access-Control-Allow-Origin": "*",
+            }
+        }
         axios.post(api_url, {
             id_number: id,
             'open_account_data': 'open_account_data',
