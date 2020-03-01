@@ -1,0 +1,173 @@
+{
+    "register": {
+        "eng": "📝Registration"
+    },
+    "welcome": {
+        "eng": "Congratulations on openning your account! 😃😃😃"
+    },
+    "gohome": {
+        "eng": "🏠 Go to main menu "
+    },
+    "queries": {
+        "eng": "🧐 Queries"
+    },
+    "balance": {
+        "eng": "💷 Current balance"
+    },
+    "balance_res": {
+        "eng": "💷 Your current balance is $[1]"
+    },
+    "period": {
+        "eng": "📈 Spendings for last..."
+    },
+    "topup": {
+        "eng": "🔝 Top up your phone balance"
+    },
+    "myphone": {
+        "eng": "📱 My number"
+    },
+    "anotherphone": {
+        "eng": "👨 Another number"
+    },
+    "atms": {
+        "eng": "🏧 Closest ATMs"
+    },
+    "name": {
+        "eng": "👔 Name"
+    },
+    "username": {
+        "eng": "👥 Username"
+    },
+    "firstname": {
+        "eng": "👥 First name"
+    },
+    "surname": {
+        "eng": "👥 Surname"
+    },
+    "job": {
+        "eng": "💼 Job"
+    },
+    "photo": {
+        "eng": "📷 Photo"
+    },
+    "gender": {
+        "eng": "♀️♂️ Gender"
+    },
+    "settings": {
+        "eng": "🛠 Settings"
+    },
+    "reset": {
+        "eng": "⚪ Reset progress"
+    },
+    "delete": {
+        "eng": "🔴 Delete account"
+    },
+    "back": {
+        "eng": "⬅️ Back"
+    },
+    "yes": {
+        "eng": "✅ Yes"
+    },
+    "set_username": {
+        "eng": "Enter your full name"
+    },
+    "set_firstname": {
+        "eng": "Enter your first name"
+    },
+    "set_surname": {
+        "eng": "Enter your surname"
+    },
+    "set_phone": {
+        "eng": "Push the button to send your contact or enter your phone number"
+    },
+    "set_postcode": {
+        "eng": "Your postcode"
+    },
+    "set_name_error": {
+        "eng": "Name is too long"
+    },
+    "set_job": {
+        "eng": "💼 Enter profession"
+    },
+    "set_gender": {
+        "eng": "Choose gender"
+    },
+    "choose_from_list": {
+        "eng": "Choose from the list 👇"
+    },
+    "set_photo": {
+        "eng": "Choose method 👇"
+    },
+    "set_photo_success": {
+        "eng": "Photo has been set 👍"
+    },
+    "upload_photo": {
+        "eng": "🔼 Upload photo"
+    },
+    "upload_photo_error": {
+        "eng": "Upload item as photo 🖼️"
+    },
+    "choose_photo": {
+        "eng": "🖼️ From profile"
+    },
+    "choose_photo_error": {
+        "eng": "No photos in your account"
+    },
+    "choose": {
+        "eng": "✔️"
+    },
+    "choose_action": {
+        "eng": "Choose action 👇"
+    },
+    "choose_quiz_type": {
+        "eng": "Choose quiz type"
+    },
+    "change_success": {
+        "eng": "Successfully changed ✔️"
+    },
+    "not_active": {
+        "eng": "Your account is not active, please fill in theese fields:\n"
+    },
+    "activate": {
+        "eng": "🔑 Activate"
+    },
+    "send_password": {
+        "eng": "Send password"
+    },
+    "activated": {
+        "eng": "Your account is now active"
+    },
+    "deleted": {
+        "eng": "Your account is deleted"
+    },
+    "reseted": {
+        "eng": "Progress has been reset"
+    },
+    "confirm": {
+        "eng": "Are you sure?"
+    },
+    "quiz_completed": {
+        "eng": "Quiz completed ✨"
+    },
+    "no_photo_detected": {
+        "eng": "No photo sent"
+    },
+    "authorize": {
+        "eng": "Authorization"
+    },
+    "web_username": {
+        "eng": "Username"
+    },
+    "password": {
+        "eng": "Password"
+    },
+    "get_password": {
+        "eng": "Get password"
+    },
+    "invalid_credentials": {
+        "eng": "Invalid credentials"
+    },
+    "temporary_password": {
+        "eng": "Temporary password"
+    }
+}

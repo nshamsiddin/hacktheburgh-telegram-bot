@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+node_modules/
+*.txt
+*.log
+resources/config.js
