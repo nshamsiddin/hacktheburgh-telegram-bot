@@ -1,6 +1,12 @@
 {
     "register": {
-        "eng": "📝Open a new bank account"
+        "eng": "📝 Open a new bank account"
+    },
+    "interactive": {
+        "eng": "📝 Interactive moxs"
+    },
+    "send_questions": {
+        "eng": "📝 What is your problem?"
     },
     "welcome": {
         "eng": "Congratulations on opening your account! 😃😃😃"

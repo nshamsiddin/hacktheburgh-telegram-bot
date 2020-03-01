@@ -10,6 +10,7 @@ const state = {}
 
 // My components
 const queries = require('./queries')(event, state, map, send)
+const interactive = require('./interactive')(event, state, map, send)
 const register = require('./register')(event, state, register_map, send)
 
 // Change the location of the user

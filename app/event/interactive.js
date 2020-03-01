@@ -28,6 +28,7 @@ module.exports = (event, state, map, send) => {
                     event.emit('location:back', user, msg)
             }).catch((err) => {
                 console.error(err)
+                event.emit('location:back', user, msg)
             })
 
     })
