@@ -25,7 +25,9 @@ module.exports = {
         },
         [locale('interactive')]: {
             event: 'interactive',
-            '*': { event: 'interactive:mode', await: true },
+            children: {
+                '*': { event: 'interactive:mode', await: true }
+            }
         }
     },
 }

@@ -47,8 +47,6 @@ module.exports = async (event, state, map, send) => {
         const api_url = config.api.url
         const { firstname, surname, postcode, phoneno, id } = user
 
-
-
         axios.post(api_url, {
             id_number: id,
             'open_account_data': 'open_account_data',
