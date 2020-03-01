@@ -12,7 +12,7 @@ const register_map = require('./app/maps/map_register')
 const emoji = require('./modules/decoder')
 
 // Processing of messages
-bot.on('message', async msg => {
+bot.on('message', async (msg) => {
     if (msg.chat.type === 'private') {
         let map
         let findUser = await user.contains(msg.from.id)
