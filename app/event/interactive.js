@@ -25,7 +25,7 @@ module.exports = (event, state, map, send) => {
             query: msg.text
         }, axiosConfig)
             .then((res) => {
-                send.messageHiddenKeyboard(id, res.body.reponse)
+                send.messageHiddenKeyboard(id, res.body.response)
                 // if (!res.next)
                     // event.emit('location:back', user, msg)
 
