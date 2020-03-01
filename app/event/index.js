@@ -6,6 +6,8 @@ const register_map = require('../maps/map_register')
 // Locking User Location
 const state = {}
 
+
+
 // My components
 const queries = require('./queries')(event, state, map, send)
 const register = require('./register')(event, state, register_map, send)

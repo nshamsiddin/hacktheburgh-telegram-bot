@@ -6,7 +6,7 @@
         "eng": "Congratulations on openning your account! 😃😃😃"
     },
     "gohome": {
-        "eng": "🏠 Go to main menu "
+        "eng": "🏠 Go to main menu"
     },
     "queries": {
         "eng": "🧐 Queries"
@@ -72,28 +72,19 @@
         "eng": "Enter your full name"
     },
     "set_firstname": {
-        "eng": "Enter your first name"
+        "eng": "Enter your first name 📝"
     },
     "set_surname": {
-        "eng": "Enter your surname"
+        "eng": "Enter your surname 📝"
     },
     "set_phone": {
         "eng": "Push the button to send your contact or enter your phone number"
     },
     "set_postcode": {
-        "eng": "Your postcode"
+        "eng": "Your postcode 📝"
     },
     "set_name_error": {
         "eng": "Name is too long"
-    },
-    "set_job": {
-        "eng": "💼 Enter profession"
-    },
-    "set_gender": {
-        "eng": "Choose gender"
-    },
-    "choose_from_list": {
-        "eng": "Choose from the list 👇"
     },
     "set_photo": {
         "eng": "Choose method 👇"

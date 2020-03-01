@@ -18,7 +18,7 @@ module.exports = (event, state, map, send) => {
             send.message(user.id, locale('balance_res', 23))
             send.keyboard(msg.from.id, locale('queries'), action, 2)
         }).catch((err) => {
-            logger.error(err)
+            console.error(err)
         })
     })
 

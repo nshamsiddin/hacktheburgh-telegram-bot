@@ -1,4 +1,6 @@
 const User = require('../controllers/user')
+const axios = require('axios').default
+const config = require('../../resources/config')
 
 module.exports = async (event, state, map, send) => {
 
@@ -36,11 +38,31 @@ module.exports = async (event, state, map, send) => {
     })
 
     event.on('register:postcode', async (user, msg, action, next) => {
+
         user.postcode = msg.text
         user.active = true
         await User.save(user)
-        const keyboard = [[{text : locale('gohome')}]]
-        send.keyboard(msg.from.id, locale('welcome'), action, 2)
+
+        const api_url = config.api.url
+        const { firstname, surname, postcode, phoneno, id } = user
+
+        axios.post(api_url, {
+            id_number: id,
+            query: 'open_account_data',
+            first_name: firstname,
+            last_name: surname,
+            post_code: postcode,
+            phone_number: phoneno,
+            dob: new Date(),
+        }).then((res) => {
+            send.message(user.id, locale('balance_res', 23))
+            send.keyboard(msg.from.id, locale('queries'), action, 2)
+        }).catch((err) => {
+            console.error(err)
+        })
+
+        const keyboard = [locale('gohome')]
+        send.keyboard(msg.from.id, locale('welcome'), keyboard)
         next && next()
     })
 

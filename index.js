@@ -1,7 +1,6 @@
 locale = require('./modules/locale').get
 locale_pick = require('./modules/locale').pick
 get_translations = require('./modules/locale').get_translations
-logger = require('./modules/logger')
 
 const bot = require('./modules/telegam').bot
 const commandEvents = require('./app/commandEvents')

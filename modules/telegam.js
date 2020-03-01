@@ -57,7 +57,7 @@ exports.keyboard = (user, message, data, inline = 2, options = {}) => {
             arr.push(item)
         }
     } else {
-        // Received a normal array
+        // Received a proper array
         arr = data
     }
 

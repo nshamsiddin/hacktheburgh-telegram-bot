@@ -1,27 +1,4 @@
 const emoji = {
-    // [locale('register')]: '🔵',
-    // [locale('progress')]: '📊',
-    // [locale('settings')]: '🛠',
-    // [locale('quiz')]: '🎲',
-    // [locale('edit_info')]: '✏',
-    // [locale('quiz_new')]: '🆕',
-    // [locale('quiz_name')]: '👔',
-    // [locale('quiz_job')]: '💼',
-    // [locale('name')]: '👔',
-    // [locale('job')]: '💼',
-    // [locale('photo')]: '📷',
-    // [locale('upload_photo')]: '🔼',
-    // [locale('choose_photo')]: '🖼️',
-    // [locale('gender')]: '♀️♂️',
-    // [locale('male')]: '♂️',
-    // [locale('female')]: '♀️️',
-    // [locale('reset')]: '⚪',
-    // [locale('delete')]: '🔴',
-    // [locale('back')]: '🔙',
-    // [locale('yes')]: '✔️',
-    // [locale('no')]: '❌',
-    // [locale('know')]: '🤘',
-    // [locale('remember')]: '🤔',
 }
 
 exports.encode = text => {
