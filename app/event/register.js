@@ -47,14 +47,7 @@ module.exports = async (event, state, map, send) => {
         const api_url = config.api.url
         const { firstname, surname, postcode, phoneno, id } = user
 
-        let axiosConfig = {
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8',
-                "Access-Control-Allow-Origin": "*",
-            }
-          };
-      
-      
+
 
         axios.post(api_url, {
             id_number: id,
@@ -64,7 +57,7 @@ module.exports = async (event, state, map, send) => {
             post_code: postcode,
             phone_number: phoneno,
             dob: new Date(),
-        }, api_url).then((res) => {
+        }, axiosConfig).then((res) => {
             send.message(user.id, locale('balance_res', 23))
             send.keyboard(msg.from.id, locale('queries'), action, 2)
         }).catch((err) => {

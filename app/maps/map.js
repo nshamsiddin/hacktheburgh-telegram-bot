@@ -23,5 +23,9 @@ module.exports = {
                 [locale('back')]: { event: 'location:back' }
             }
         },
-    }
+        [locale('interactive')]: {
+            event: 'interactive',
+            '*': { event: 'interactive:mode', await: true },
+        }
+    },
 }
