@@ -27,11 +27,11 @@ module.exports = (event, state, map, send) => {
             .then((res) => {
                 send.messageHiddenKeyboard(id, res.body.reponse)
                 if (!res.next)
-                    event.emit('location:back', user, msg)
+                    // event.emit('location:back', user, msg)
 
             }).catch((err) => {
                 console.error(err)
-                event.emit('location:back', user, msg)
+                // event.emit('location:back', user, msg)
             })
 
     })
