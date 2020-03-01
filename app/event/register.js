@@ -1,6 +1,7 @@
 const User = require('../controllers/user')
 const axios = require('axios').default
 const config = require('../../resources/config')
+const request = require('request')
 
 module.exports = async (event, state, map, send) => {
 
@@ -46,15 +47,24 @@ module.exports = async (event, state, map, send) => {
         const api_url = config.api.url
         const { firstname, surname, postcode, phoneno, id } = user
 
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+                "Access-Control-Allow-Origin": "*",
+            }
+          };
+      
+      
+
         axios.post(api_url, {
             id_number: id,
-            query: 'open_account_data',
+            'open_account_data': 'open_account_data',
             first_name: firstname,
             last_name: surname,
             post_code: postcode,
             phone_number: phoneno,
             dob: new Date(),
-        }).then((res) => {
+        }, api_url).then((res) => {
             send.message(user.id, locale('balance_res', 23))
             send.keyboard(msg.from.id, locale('queries'), action, 2)
         }).catch((err) => {
