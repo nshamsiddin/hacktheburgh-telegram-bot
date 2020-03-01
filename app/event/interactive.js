@@ -22,10 +22,13 @@ module.exports = (event, state, map, send) => {
 
         axios.post(api_url, {
             id_number: id,
+            query: msg.text
         }, axiosConfig)
             .then((res) => {
+                send.messageHiddenKeyboard(id, res.body.reponse)
                 if (!res.next)
                     event.emit('location:back', user, msg)
+
             }).catch((err) => {
                 console.error(err)
                 event.emit('location:back', user, msg)
